@@ -5,7 +5,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'KeitaNakamura/neodark.vim'
 
 " Auto completion
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --clang-completer --omnisharp-completer' }
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 
