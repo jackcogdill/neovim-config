@@ -25,3 +25,6 @@ colorscheme neodark
 set ignorecase
 set smartcase
 
+" Don't use Ibeam cursor in insert mode
+set guicursor=
+
