@@ -28,3 +28,6 @@ set smartcase
 " Don't use Ibeam cursor in insert mode
 set guicursor=
 
+" Disable search highlighting
+set nohlsearch
+
