@@ -42,8 +42,8 @@ autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeDirArrowExpandable = '˃'
-let g:NERDTreeDirArrowCollapsible = '˅'
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
 
 " Smart case
 set ignorecase
