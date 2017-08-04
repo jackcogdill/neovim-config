@@ -11,11 +11,13 @@ Plug 'terryma/vim-multiple-cursors'
 " Initialize plugin system
 call plug#end()
 
+" Line numbers and cursor line
 set number
 set cursorline
-
+" color scheme
 colorscheme neodark
 
+" Smart case
 set ignorecase
 set smartcase
 
