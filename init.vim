@@ -13,6 +13,9 @@ let g:ycm_server_python_interpreter = '/opt/local/bin/python3'
 " Multiple cursors like sublime
 Plug 'terryma/vim-multiple-cursors'
 
+" File tree
+Plug 'scrooloose/nerdtree'
+
 " Initialize plugin system
 call plug#end()
 
@@ -20,12 +23,24 @@ call plug#end()
 set number
 set cursorline
 
-" color scheme
+" Color scheme
+" ============
 set termguicolors     " enable true colors support
 "let ayucolor="light"  " for light version of theme
 let ayucolor="mirage" " for mirage version of theme
 "let ayucolor="dark"   " for dark version of theme
 colorscheme ayu
+
+" Nerd tree config
+" ================
+" Open a NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
+" Jump to the main window.
+autocmd VimEnter * wincmd p
+" Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:NERDTreeDirArrowExpandable = '˃'
+let g:NERDTreeDirArrowCollapsible = '˅'
 
 " Smart case
 set ignorecase
