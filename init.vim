@@ -5,6 +5,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Color scheme
 Plug 'ayu-theme/ayu-vim'
 
+" Display indentation levels
+Plug 'Yggdroot/indentLine'
+
 " Auto completion
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 
@@ -31,6 +34,13 @@ set termguicolors     " enable true colors support
 let ayucolor="mirage" " for mirage version of theme
 "let ayucolor="dark"   " for dark version of theme
 colorscheme ayu
+
+" IndentLine {{
+let g:indentLine_char = '┆'
+let g:indentLine_first_char = '┆'
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_setColors = 0
+" }}
 
 " YCM config
 " ==========
