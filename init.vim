@@ -6,7 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'ayu-theme/ayu-vim'
 
 " Auto completion
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --tern-completer --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 
 " Multiple cursors like sublime
 Plug 'terryma/vim-multiple-cursors'
