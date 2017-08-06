@@ -59,4 +59,6 @@ set guicursor=
 
 " Remove search highlighting
 nnoremap <silent> <C-l> :let @/=""<CR>
+" Press // in visual mode to search selected text
+vnoremap // y/<C-R>"<CR>
 
