@@ -1,7 +1,7 @@
 " Using vim-plug for plugins {{
 call plug#begin('~/.local/share/nvim/plugged')
 " Color scheme
-Plug 'ayu-theme/ayu-vim'
+Plug 'jackcogdill/ayu-vim'
 " Auto completion
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 " Multiple cursors like sublime
