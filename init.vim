@@ -12,9 +12,6 @@ Plug 'kien/ctrlp.vim'
 call plug#end()
 " }}
 
-" Map the leader key to space
-let mapleader="\<SPACE>"
-
 " Color scheme {{
 set number
 set cursorline
@@ -52,4 +49,8 @@ set guicursor=
 nnoremap <silent> <C-l> :let @/=""<CR>
 " Press // in visual mode to search selected text
 vnoremap // y/<C-R>"<CR>
+" Redo macro with ledaer+space
+nnoremap <Leader><Space> @q
+" Redo macro with space at next search result
+nnoremap <Space> n@q
 
