@@ -49,8 +49,8 @@ set guicursor=
 nnoremap <silent> <C-l> :let @/=""<CR>
 " Press // in visual mode to search selected text
 vnoremap // y/<C-R>"<CR>
-" Redo macro with ledaer+space
-nnoremap <Leader><Space> @q
-" Redo macro with space at next search result
-nnoremap <Space> n@q
+" Redo macro with space
+nnoremap <Space> @q
+" Redo macro with leader+space at next search result
+nnoremap <Leader><Space> n@q
 
