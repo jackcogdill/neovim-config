@@ -53,4 +53,8 @@ vnoremap // y/<C-R>"<CR>
 nnoremap <Space> @q
 " Redo macro with leader+space at next search result
 nnoremap <Leader><Space> n@q
+" Redo macro on all lines in visual mode
+vnoremap <Space> :normal @q<CR>
+" Press leader+escape in terminal to get out
+tnoremap <Leader><Esc> <C-\><C-n>
 
