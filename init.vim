@@ -6,6 +6,8 @@ Plug 'jackcogdill/ayu-vim'
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 " Multiple cursors like sublime
 Plug 'terryma/vim-multiple-cursors'
+" Parentheses autocomplete
+Plug 'Raimondi/delimitMate'
 " File finder
 Plug 'kien/ctrlp.vim'
 " Initialize plugin system
