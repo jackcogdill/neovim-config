@@ -63,3 +63,9 @@ vnoremap . :normal .<CR>
 tnoremap <Leader><Esc> <C-\><C-n>
 " Enable mode shapes, 'Cursor' highlight, and blinking:
 set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175
+
+"Folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
