@@ -15,6 +15,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " File finder
 Plug 'kien/ctrlp.vim'
+" Whitespace plugin
+Plug 'ntpeters/vim-better-whitespace'
 " ============================
 " Initialize plugin system
 call plug#end()
@@ -50,6 +52,10 @@ let g:airline_powerline_fonts = 1 " Powerline symbols
 nnoremap <Leader>p :CtrlP<CR>
 " Open buffer menu
 nnoremap <Leader>b :CtrlPBuffer<CR>
+" }}
+
+" Whitespace config {{
+nnoremap <silent> <C-s> :silent :StripWhitespace<CR>
 " }}
 
 " Smart case
