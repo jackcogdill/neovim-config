@@ -1,5 +1,6 @@
 " Using vim-plug for plugins {{
 call plug#begin('~/.local/share/nvim/plugged')
+" ============================
 " Color scheme
 Plug 'jackcogdill/ayu-vim'
 " Auto completion
@@ -8,8 +9,13 @@ Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 Plug 'terryma/vim-multiple-cursors'
 " Parentheses autocomplete
 Plug 'Raimondi/delimitMate'
+" Status bar
+Plug 'vim-airline/vim-airline'
+" Status bar
+Plug 'vim-airline/vim-airline-themes'
 " File finder
 Plug 'kien/ctrlp.vim'
+" ============================
 " Initialize plugin system
 call plug#end()
 " }}
@@ -28,6 +34,15 @@ colorscheme ayu
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_server_python_interpreter = '/opt/local/bin/python3'
+" }}
+
+" Airline config {{
+let g:airline#extensions#tabline#enabled = 1
+" }}
+
+" Airline theme config {{
+let g:airline_theme='base16_oceanicnext'
+let g:airline_powerline_fonts = 1 " Powerline symbols
 " }}
 
 " CtrlP config {{
