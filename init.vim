@@ -95,4 +95,6 @@ set foldlevel=1         "this is just what i use
 nnoremap <silent> <C-M> :silent :tabnew<CR>
 nnoremap <silent> <C-Left> :silent :tabp<CR>
 nnoremap <silent> <C-Right> :silent :tabn<CR>
+" Delete buffer
+nnoremap <silent> <C-L> :silent :bd<CR>
 
