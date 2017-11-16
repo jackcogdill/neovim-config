@@ -84,3 +84,9 @@ set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
+
+" Navigate tabs
+nnoremap <silent> <C-M> :silent :tabnew<CR>
+nnoremap <silent> <C-Left> :silent :tabp<CR>
+nnoremap <silent> <C-Right> :silent :tabn<CR>
+
