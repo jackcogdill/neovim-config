@@ -1,6 +1,8 @@
 " Using vim-plug for plugins {{
 call plug#begin('~/.local/share/nvim/plugged')
 " ============================
+" Rainbow parantheses
+Plug 'luochen1990/rainbow'
 " Auto completion
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 " Multiple cursors like sublime
@@ -23,8 +25,11 @@ call plug#end()
 " Color scheme {{
 set number
 set cursorline
-set termguicolors     " enable true colors support
+" Enable true colors support
+set termguicolors
 colorscheme Aurora
+" Enable rainbow parantheses
+let g:rainbow_active  = 1
 " }}
 
 " YCM config {{
