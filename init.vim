@@ -97,4 +97,6 @@ nnoremap <silent> <C-Left> :silent :tabp<CR>
 nnoremap <silent> <C-Right> :silent :tabn<CR>
 " Delete buffer
 nnoremap <silent> <C-L> :silent :bd<CR>
+" Delete buffer with !
+nnoremap <silent> <C-K> :silent :bd!<CR>
 
