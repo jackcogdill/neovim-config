@@ -1,8 +1,6 @@
 " Using vim-plug for plugins {{
 call plug#begin('~/.local/share/nvim/plugged')
 " ============================
-" Color scheme
-Plug 'jackcogdill/ayu-vim'
 " Auto completion
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 " Multiple cursors like sublime
@@ -26,10 +24,7 @@ call plug#end()
 set number
 set cursorline
 set termguicolors     " enable true colors support
-"let ayucolor="light"  " for light version of theme
-let ayucolor="mirage" " for mirage version of theme
-"let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
+colorscheme Aurora
 " }}
 
 " YCM config {{
@@ -43,7 +38,7 @@ let g:airline#extensions#tabline#enabled = 1
 " }}
 
 " Airline theme config {{
-let g:airline_theme='base16_oceanicnext'
+let g:airline_theme='raven'
 let g:airline_powerline_fonts = 1 " Powerline symbols
 " }}
 
