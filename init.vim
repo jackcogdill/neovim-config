@@ -1,22 +1,29 @@
 " Using vim-plug for plugins {{
 call plug#begin('~/.local/share/nvim/plugged')
 " ============================
+" Syntax highlighting {{
 " Rainbow parantheses
 Plug 'luochen1990/rainbow'
-" Auto completion
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
+" Better python syntax highlighting
+Plug 'hdima/python-syntax'
+" }}
+
+" Editing {{
 " Multiple cursors like sublime
 Plug 'terryma/vim-multiple-cursors'
 " Parentheses autocomplete
 Plug 'Raimondi/delimitMate'
-" Status bar
-Plug 'vim-airline/vim-airline'
-" Status bar
-Plug 'vim-airline/vim-airline-themes'
-" File finder
-Plug 'kien/ctrlp.vim'
 " Whitespace plugin
 Plug 'ntpeters/vim-better-whitespace'
+" }}
+
+" Auto completion
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
+
+" Status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 " ============================
 " Initialize plugin system
 call plug#end()
@@ -32,6 +39,9 @@ colorscheme Aurora
 let g:rainbow_active  = 1
 " }}
 
+" Python syntax
+let python_highlight_all = 1
+
 " YCM config {{
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
@@ -45,13 +55,6 @@ let g:airline#extensions#tabline#enabled = 1
 " Airline theme config {{
 let g:airline_theme='base16_chalk'
 let g:airline_powerline_fonts = 1 " Powerline symbols
-" }}
-
-" CtrlP config {{
-" Open file menu
-nnoremap <Leader>p :CtrlP<CR>
-" Open buffer menu
-nnoremap <Leader>b :CtrlPBuffer<CR>
 " }}
 
 " Whitespace config {{
