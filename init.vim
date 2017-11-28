@@ -6,6 +6,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'luochen1990/rainbow'
 " Better python syntax highlighting
 Plug 'hdima/python-syntax'
+" ES7 javascript highlighting
+Plug 'othree/yajs.vim'
 " }}
 
 " Editing {{
