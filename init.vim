@@ -27,7 +27,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Palenight color scheme
-Plug 'drewtempelmeyer/palenight.vim'
+Plug 'jackcogdill/palenight.vim'
 
 " ============================
 " Initialize plugin system
@@ -52,7 +52,7 @@ set cursorline
 " Enable true colors support
 set termguicolors
 " Enable italics for comments
-highlight Comment cterm=italic
+hi Comment cterm=italic
 " }}
 
 " Python syntax
