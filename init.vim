@@ -26,19 +26,33 @@ Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Palenight color scheme
+Plug 'drewtempelmeyer/palenight.vim'
+
 " ============================
 " Initialize plugin system
 call plug#end()
 " }}
 
-" Color scheme {{
+" Specific Color scheme {{
+" Italics for my favorite color scheme
+let g:palenight_terminal_italics=1
+set background=dark
+" Set color scheme
+colorscheme palenight
+" Enable rainbow parantheses
+let g:rainbow_active = 1
+" }}
+
+" General Color scheme {{
+" Enable line numbers
 set number
+" Enable cursor line
 set cursorline
 " Enable true colors support
 set termguicolors
-colorscheme Aurora
-" Enable rainbow parantheses
-let g:rainbow_active  = 1
+" Enable italics for comments
+highlight Comment cterm=italic
 " }}
 
 " Python syntax
