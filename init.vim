@@ -121,3 +121,6 @@ nnoremap <silent> <C-L> :silent :bd<CR>
 " Delete buffer with !
 nnoremap <silent> <C-K> :silent :bd!<CR>
 
+" Spellcheck
+nmap <Leader>s :setlocal spell! spelllang=en_us<CR>
+
