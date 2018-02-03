@@ -116,6 +116,10 @@ nnoremap <C-O> o<Esc>
 nnoremap <silent> <C-M> :silent :tabnew<CR>
 nnoremap <silent> <C-Left> :silent :tabp<CR>
 nnoremap <silent> <C-Right> :silent :tabn<CR>
+
+" Navigate buffers
+nnoremap <silent> <Leader>[ :silent :bp<CR>
+nnoremap <silent> <Leader>] :silent :bn<CR>
 " Delete buffer
 nnoremap <silent> <C-L> :silent :bd<CR>
 " Delete buffer with !
