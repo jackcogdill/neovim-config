@@ -11,8 +11,6 @@ Plug 'othree/yajs.vim'
 " }}
 
 " Editing {{
-" Multiple cursors like sublime
-Plug 'terryma/vim-multiple-cursors'
 " Parentheses autocomplete
 Plug 'Raimondi/delimitMate'
 " Whitespace plugin
@@ -69,7 +67,7 @@ let g:airline#extensions#tabline#enabled = 1
 " }}
 
 " Airline theme config {{
-let g:airline_theme='base16_chalk'
+let g:airline_theme='base16_shell'
 let g:airline_powerline_fonts = 1 " Powerline symbols
 " }}
 
