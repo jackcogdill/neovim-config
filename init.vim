@@ -86,7 +86,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set guicursor=
 
 " Remove search highlighting
-nnoremap <silent><Esc> :let @/=""<CR>
+nnoremap <silent><Esc> :noh<CR>
 " Press // in visual mode to search selected text
 vnoremap // y/<C-R>"<CR>
 " Redo macro with space
